@@ -1,16 +1,5 @@
 /* - table of content start
 ==================================================================================================== */
-
-/* --------------------------------------------------
-The "My Porto" HTML5 Template
-
-File:           CSS Base
-Version:        ----
-Last change:    ---- 
-Author:         ----
--------------------------------------------------- */
-
-
 /* --------------------------------------------------
 * 1 = fonts load
 * 2 = global area
@@ -294,14 +283,20 @@ a {
 
 .common-color { color: #2196f3; }
 
-.photoshop-bg { background-color: #2196f3; }
-.photoshop-color { color: #2196f3; }
+.java-bg { background-color: #2196f3; }
+.java-color { color: #2196f3; }
 
-.jquery-bg { background-color: #26a69a; }
-.jquery-color { color: #26a69a; }
+.powerbi-bg { background-color: #92940b; }
+.powerbi-color { color: #92940b; }
+
+.javascript-bg { background-color: #26a69a; }
+.javascript-color { color: #26a69a; }
 
 .php-bg { background-color: #ef5350; }
 .php-color { color: #ef5350; }
+
+.español-bg { background-color: #35caf0; }
+.español-color { color: #35caf0; }
 
 .html5-bg { background-color: #3f51b5; }
 .html5-color { color: #3f51b5; }
@@ -309,8 +304,17 @@ a {
 .css3-bg { background-color: #fbc02d; }
 .css3-color { color: #fbc02d; }
 
-.marketing-bg { background-color: #ab47bc; }
-.marketing-color { color: #ab47bc; }
+.github-bg { background-color: #ab47bc; }
+.github-color { color: #ab47bc; }
+
+.bizagi-bg { background-color: #dd691b; }
+.bizagi-color { color: #dd691b; }
+
+.mysql-bg { background-color: #ee2424; }
+.mysql-color { color: #ee2424; }
+
+.office-bg { background-color: #30a14c; }
+.office-color { color: #30a14c; }
 
 /* - 2 - global area end
 ==================================================================================================== */
@@ -356,18 +360,6 @@ a {
   margin-bottom: 10px;
   font-family: 'Roboto', sans-serif;
 }
-
-
-.fixed-left-side-body .discription {
-  margin-bottom: 50px;
-  padding: 50px 40px 50px 60px;
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
-}
-.fixed-left-side-body .cv-btn {
-  text-align: center;
-}
-
 
 .fixed-left-side-body::-webkit-scrollbar {
   width: 2px;
@@ -518,7 +510,6 @@ a {
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s;
 }
-
 
 
 
@@ -693,8 +684,11 @@ ul.side-nav li.sn-item > a > i {
 .aboutme-section ul.service-list li > i {
   top: 40px;
   left: 40px;
+  right: 40px;
+  bottom: 40px;
   font-size: 40px;
-  position: absolute;
+  position: absolute;  
+  text-align: center; 
 }
 .aboutme-section ul.service-list li > span.service-name {
   left: 40px;
@@ -731,21 +725,13 @@ ul.side-nav li.sn-item > a > i {
 }
 
 /* ---------- colorzzz ---------- */
-.aboutme-section ul.service-list li.logodesign > i {color: #2196f3;}
-.aboutme-section ul.service-list li.logodesign:before {background-color: #2196f3;}
-.aboutme-section ul.service-list li.logodesign > a.more {background-color: #2196f3;}
+.aboutme-section ul.service-list li.music > i {color: #fbc02d;}
+.aboutme-section ul.service-list li.music:before {background-color: #fbc02d;}
+.aboutme-section ul.service-list li.music > a.more {background-color: #fbc02d;}
 
-.aboutme-section ul.service-list li.website > i {color: #ef5350;}
-.aboutme-section ul.service-list li.website:before {background-color: #ef5350;}
-.aboutme-section ul.service-list li.website > a.more {background-color: #ef5350;}
-
-.aboutme-section ul.service-list li.softwares > i {color: #fbc02d;}
-.aboutme-section ul.service-list li.softwares:before {background-color: #fbc02d;}
-.aboutme-section ul.service-list li.softwares > a.more {background-color: #fbc02d;}
-
-.aboutme-section ul.service-list li.applications > i {color: #ab47bc;}
-.aboutme-section ul.service-list li.applications:before {background-color: #ab47bc;}
-.aboutme-section ul.service-list li.applications > a.more {background-color: #ab47bc;}
+.aboutme-section ul.service-list li.sports > i {color: #ab47bc;}
+.aboutme-section ul.service-list li.sports:before {background-color: #ab47bc;}
+.aboutme-section ul.service-list li.sports > a.more {background-color: #ab47bc;}
 
 
 /* personal-details-right
@@ -898,6 +884,8 @@ ul.side-nav li.sn-item > a > i {
   margin-bottom: 50px;
 }
 
+
+
 @keyframes Rx-width-90 {
  0% {
   width: 0%;
@@ -907,6 +895,7 @@ ul.side-nav li.sn-item > a > i {
   width: 90%;
 }
 }
+
 @-webkit-keyframes Rx-width-90 {
  0% {
   width: 0%;
@@ -916,6 +905,16 @@ ul.side-nav li.sn-item > a > i {
   width: 90%;
 }
 }
+
+@-webkit-keyframes Rx-width-100 {
+  0% {
+   width: 0%;
+ }
+ 
+ 100% {
+   width: 100%;
+ }
+ }
 
 @-webkit-keyframes Rx-width-60 {
  0% {
@@ -968,6 +967,16 @@ ul.side-nav li.sn-item > a > i {
 }
 }
 
+@-webkit-keyframes Rx-width-50 {
+  0% {
+   width: 0%;
+ }
+ 
+ 100% {
+   width: 50%;
+ }
+ }
+
 @keyframes Rx-width-80 {
  0% {
   width: 0%;
@@ -1010,6 +1019,13 @@ ul.side-nav li.sn-item > a > i {
   -webkit-animation-name: Rx-width-65;
   -o-animation-name: Rx-width-65;
   animation-name: Rx-width-65;
+  animation-fill-mode: forwards;
+}
+
+.Rx-width-50 { 
+  -webkit-animation-name: Rx-width-50;
+  -o-animation-name: Rx-width-50;
+  animation-name: Rx-width-50;
   animation-fill-mode: forwards;
 }
 
@@ -1449,7 +1465,7 @@ ul.brand-list li:hover > a {
 /* experience-left
 .................................................. */
 .experience-left {
-  z-index: 0;
+  z-index: 3;
   position: relative;
   padding: 60px 60px;
   box-shadow: 0px 10px 40px 0px rgba(1, 1, 1, 0.1);
@@ -1463,9 +1479,10 @@ ul.brand-list li:hover > a {
 .border-left {
   padding: 20px 30px 0px 30px;
   border-left: 2px solid #f0f0f0;
+  width: 100%;
 }
 .experience-left-item-area::-webkit-scrollbar {
-  width: 2px;
+  width: 3px;
   height: 100px;
 }
 
@@ -1480,7 +1497,7 @@ ul.brand-list li:hover > a {
 
 .experience-left .experience-item {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
 .experience-left .experience-item:last-child {
   margin-bottom: 0px;
@@ -1567,7 +1584,6 @@ ul.brand-list li:hover > a {
 
 /* - 4.6 - experience-section end
 ================================================== */
-
 
 
 /* - 4.7 - -section start
@@ -1659,90 +1675,6 @@ ul.brand-list li:hover > a {
 /* - 4.7 - -section end
 ================================================== */
 
-
-/* - 4.8 - contact-me-section start
-================================================== */
-.contact-me-section .contact-left .cont-item {
-  width: 100%;
-  height: 206px;
-  display: table;
-  padding: 60px 60px;
-  margin-bottom: 30px;
-  transition: all .4s ease-in-out;
-   background-color: #ffffff;
-  box-shadow: 0px 10px 40px 0px rgba(1, 1, 1, 0.1);
-}
-.contact-me-section .contact-left .cont-item:last-child {
-  margin-bottom: 0px;
-}
-.contact-me-section .contact-left .cont-item p {
-  font-style: italic;
-}
-.contact-me-section .contact-left .cont-item p > span {
-  float: left;
-  width: 110px;
-  margin-right: 25px;
-  position: relative;
-}
-.contact-me-section .contact-left .cont-item p > span:after {
-  top: 0;
-  right: 0;
-  content: ':';
-  color: #828282;
-  position: absolute;
-}
-
-/* contact-right
-.................................................. */
-.contact-me-section .contact-right {
-  padding: 60px 60px;
-  background-color: #2196f3;
-  box-shadow: 0px 10px 40px 0px rgba(1, 1, 1, 0.1);
-}
-.contact-me-section .contact-right h2.title {
-  color: #ffffff;
-}
-.contact-me-section .contact-right .input-field {
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-.contact-me-section .contact-right .input-field input,
-.contact-me-section .contact-right .input-field textarea {
-  color: #ffffff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.contact-me-section .contact-right .input-field label {
-  color: rgba(255, 255, 255, 0.5);
-}
-.contact-me-section .contact-right .input-field textarea {
-  min-height: 126px;
-}
-
-.contact-me-section .contact-right button.custom-btn {
-  color: #111111;
-  background-color: #ffffff;
-  border: none;
-}
-
-.contact-me-section .contact-right .input-field input:focus,
-.contact-me-section .contact-right .input-field textarea:focus {
-  border-bottom: 1px solid #ffffff;
-  box-shadow: 0 1px 0 0 #ffffff;
-}
-.contact-me-section .contact-right .input-field input:focus + label,
-.contact-me-section .contact-right .input-field textarea:focus + label {
-  color: #ffffff;
-}
-/* - 4.8 - contact-me-section end
-================================================== */
-
-/* - 4 - home (index page) end
-==================================================================================================== */
-
-
-
-
-
 /* - 5 - footer-section start
 ==================================================================================================== */
 .footer-section {
@@ -1755,30 +1687,6 @@ ul.brand-list li:hover > a {
   background-color: #ffffff;
   box-shadow: 0px 10px 40px 0px rgba(1, 1, 1, 0.1);
 }
-
-/* back to top
-.................................................. */
-.backtotop {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100px;
-  height: 100px;
-  text-align: center;
-  position: absolute;
-  background-color: #f7f7f7;
-}
-.backtotop a.scroll {
-  width: 100%;
-  height: 100%;
-  color: #111111;
-  display: block;
-  font-size: 24px;
-  line-height: 100px;
-}
-/* - 5 - footer-section end
-==================================================================================================== */
-
 
 
 /* - 6 - Start of Chooser page 
@@ -1947,4 +1855,3 @@ body.clearfix.chooser {
 	top: 10px;
     left: 47px;
 }
-
