@@ -354,9 +354,4 @@ function toggleSearch(type) {
       ($('.cd-search').hasClass('is-visible'));
     }
   }
-
-
-
-
-
 })(jQuery);
